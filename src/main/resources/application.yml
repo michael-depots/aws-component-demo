@@ -1,0 +1,27 @@
+#Application properties
+server:
+  port: 8081
+
+#AWS properties
+cloud:
+  aws:
+    region:
+      static: us-east-1
+    stack:
+      auto: false
+    credentials:
+      accessKey: AKIATMF67GMOJDEGxxxx
+      secretKey: sDp+fXap2AHGOuBw11AhkXHXrkfQ8JXVN9rHxxxx
+    dynamodb:
+      endpoint: https://dynamodb.us-east-1.amazonaws.com
+
+application:
+  bucket:
+    name: tutorial-bucket-test
+
+logging:
+  level:
+    com:
+      amazonaws:
+        util:
+          EC2MetadataUtils: error
